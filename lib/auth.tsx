@@ -25,7 +25,7 @@ interface AuthContextType {
 const AuthContext = createContext<AuthContextType | undefined>(undefined)
 
 // Try multiple possible backend URLs
-const POSSIBLE_BACKEND_URLS = ["https://somhritajoardar.pythonanywhere.com"]
+const POSSIBLE_BACKEND_URLS = ["http://localhost:5000", "http://127.0.0.1:5000"]
 
 let WORKING_API_URL: string | null = null
 
